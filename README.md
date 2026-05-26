@@ -1,10 +1,10 @@
-# 🎬 MovieFlix - Premium Streaming Interface
+# MovieFlix - Premium Streaming Interface
 
 O **MovieFlix** é uma plataforma moderna e responsiva de exibição de filmes e séries em tempo real. O projeto traz uma interface futurista inspirada em serviços de streaming premium, combinando efeitos de *glassmorphism* aeroespacial, animações ambientais e bordas interativas em neon que se adaptam dinamicamente às ações do usuário.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Este projeto foi construído utilizando as ferramentas mais modernas do ecossistema front-end:
 
@@ -16,7 +16,7 @@ Este projeto foi construído utilizando as ferramentas mais modernas do ecossist
 
 ---
 
-## ✨ Funcionalidades e Diferenciais Visuais
+## Funcionalidades e Diferenciais Visuais
 
 - **Design Mobile-First & Responsivo:** Layout totalmente adaptável. A barra de navegação lateral se transforma em um menu inferior no estilo iOS para acessibilidade em celulares.
 - **Bordas Dinâmicas em Neon:** Cards que utilizam máscaras de recorte CSS avançadas para acender uma borda gradiente viva ao passar o mouse.
@@ -26,7 +26,7 @@ Este projeto foi construído utilizando as ferramentas mais modernas do ecossist
 
 ---
 
-## 🛠️ Como Rodar o Projeto Localmente
+## Como Rodar o Projeto Localmente
 
 Siga os passos abaixo para clonar e executar a aplicação na sua máquina:
 
