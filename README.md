@@ -1,6 +1,6 @@
-# MovieFlix - Premium Streaming Interface
+# CINE FLIX - Premium Streaming Interface
 
-O **MovieFlix** é uma plataforma moderna e responsiva de exibição de filmes e séries em tempo real. O projeto traz uma interface futurista inspirada em serviços de streaming premium, combinando efeitos de *glassmorphism* aeroespacial, animações ambientais e bordas interativas em neon que se adaptam dinamicamente às ações do usuário.
+O **CINE FLIX** é uma plataforma moderna e responsiva de exibição de filmes e séries em tempo real. O projeto traz uma interface futurista inspirada em serviços de streaming premium, combinando efeitos de *glassmorphism* aeroespacial, animações ambientais e bordas interativas em neon que se adaptam dinamicamente às ações do usuário.
 
 ---
 
