@@ -1,7 +1,7 @@
 import React from 'react';
 import { Play, Info, Star } from 'lucide-react';
 
-export default function Hero({ item }) {
+export default function Hero({ item, onDetailsClick }) {
   if (!item) return null;
 
   return (
@@ -22,7 +22,7 @@ export default function Hero({ item }) {
       <div className="absolute inset-0 bg-gradient-to-r from-[#060213]/80 md:from-[#060213]/90 md:via-[#060213]/30 to-transparent" />
 
       {/* CORREÇÃO 2: Alinhamento do conteúdo. 
-        No mobile centraliza (items-center text-center), no desktop alinha à esquerda (md:items-start md:text-left).
+        No mobile centraliza (items-center text-center), no desktop alinea à esquerda (md:items-start md:text-left).
       */}
       <div className="relative p-6 sm:p-8 md:p-12 max-w-2xl z-10 flex flex-col items-center text-center md:items-start md:text-left w-full">
         
@@ -51,7 +51,11 @@ export default function Hero({ item }) {
             <Play size={16} fill="currentColor" /> Assistir Agora
           </button>
           
-          <button className="flex items-center justify-center gap-2 bg-white/5 backdrop-blur-md hover:bg-white/10 text-white border border-white/10 font-semibold px-4 md:px-6 py-3.5 rounded-xl transition-all text-xs sm:text-sm cursor-pointer whitespace-nowrap">
+          {/* Adicionado o evento onClick para abrir o painel de detalhes */}
+          <button 
+            onClick={() => onDetailsClick(item)} 
+            className="flex items-center justify-center gap-2 bg-white/5 backdrop-blur-md hover:bg-white/10 text-white border border-white/10 font-semibold px-4 md:px-6 py-3.5 rounded-xl transition-all text-xs sm:text-sm cursor-pointer whitespace-nowrap"
+          >
             <Info size={16} /> Mais Detalhes
           </button>
         </div>

@@ -76,8 +76,11 @@ export default function App() {
               />
             ) : (
               <>
-                {/* Banner Premium */}
-                <Hero item={heroItem} />
+                {/* Banner Premium atualizado com o evento para abrir os detalhes */}
+                <Hero 
+                  item={heroItem} 
+                  onDetailsClick={(media) => setSelectedMedia(media)} 
+                />
 
                 {/* Layout de Grid Assimétrico */}
                 <MediaGrid 
