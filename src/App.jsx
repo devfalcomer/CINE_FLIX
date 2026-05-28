@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import Hero from './components/Hero';
 import MediaGrid from './components/MediaGrid';
+import MediaDetails from './components/MediaDetails'; // Certifique-se de criar este componente
 import { getTrending, getMovies, getSeries } from './services/tmdb';
 
 export default function App() {
@@ -9,6 +10,12 @@ export default function App() {
   const [data, setData] = useState([]);
   const [heroItem, setHeroItem] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [selectedMedia, setSelectedMedia] = useState(null); // Nova funcionalidade: Estado para a mídia selecionada
+
+  // Reseta os detalhes caso o usuário mude de aba na Sidebar
+  useEffect(() => {
+    setSelectedMedia(null);
+  }, [activeTab]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,8 +53,7 @@ export default function App() {
       {/* Navegação Flutuante Lateral / Inferior */}
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      {/* 
-        Responsividade aplicada no Main:
+      {/* Responsividade aplicada no Main:
         - Mobile: px-4 pt-4 pb-24 (espaço extra embaixo para não cobrir o menu inferior).
         - Desktop (md:): pl-36 pr-16 pt-8 (recua para o lado da sidebar).
       */}
@@ -62,17 +68,28 @@ export default function App() {
           </div>
         ) : (
           <>
-            {/* Banner Premium */}
-            <Hero item={heroItem} />
+            {/* Condicional: Se houver uma mídia selecionada, renderiza os Detalhes. Caso contrário, renderiza a Home */}
+            {selectedMedia ? (
+              <MediaDetails 
+                media={selectedMedia} 
+                onClose={() => setSelectedMedia(null)} 
+              />
+            ) : (
+              <>
+                {/* Banner Premium */}
+                <Hero item={heroItem} />
 
-            {/* Layout de Grid Assimétrico */}
-            <MediaGrid 
-              items={data} 
-              title={
-                activeTab === 'trending' ? 'Tendências Globais' :
-                activeTab === 'movies' ? 'Filmes Selecionados' : 'Séries Recomendadas'
-              } 
-            />
+                {/* Layout de Grid Assimétrico */}
+                <MediaGrid 
+                  items={data} 
+                  title={
+                    activeTab === 'trending' ? 'Tendências Globais' :
+                    activeTab === 'movies' ? 'Filmes Selecionados' : 'Séries Recomendadas'
+                  }
+                  onMediaClick={(media) => setSelectedMedia(media)} // Nova funcionalidade passará para o MediaGrid
+                />
+              </>
+            )}
           </>
         )}
       </main>

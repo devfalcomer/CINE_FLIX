@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-export default function MediaGrid({ items, title }) {
+export default function MediaGrid({ items, title, onMediaClick }) { // Encaixamos o onMediaClick aqui
   return (
     <div className="mb-12">
       <h2 className="text-2xl font-black text-white mb-8 tracking-wide relative w-max">
@@ -18,6 +18,7 @@ export default function MediaGrid({ items, title }) {
           return (
             <div 
               key={item.id} 
+              onClick={() => onMediaClick(item)} // Nova funcionalidade: Dispara o clique passando o filme/série selecionado
               className={`group relative rounded-2xl overflow-hidden bg-[#0d091f] neon-card-glow cursor-pointer shadow-lg
                 ${isLargeCard ? 'md:col-span-2 md:row-span-2' : ''}
               `}
