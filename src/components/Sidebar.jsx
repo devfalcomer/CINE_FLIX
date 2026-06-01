@@ -7,7 +7,7 @@ export default function Sidebar({ activeTab, setActiveTab, onProfileClick }) {
       
       {/* Logo: visível apenas no desktop */}
       <div className="hidden md:block text-xl font-black tracking-wider text-white mb-4">
-        CINE
+        LUMINA SPACE
       </div>
 
       {/* Botão: Tendências */}

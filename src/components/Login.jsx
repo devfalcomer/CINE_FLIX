@@ -36,7 +36,7 @@ export default function Login({ onLoginSuccess, onNavigateToRegister }) {
 
       <div className="w-full max-w-md bg-[#0d091f]/60 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl relative z-10 animate-fadeIn">
         <h2 className="text-3xl font-black text-white text-center mb-2 tracking-tight">
-          CINE<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">FLIX</span>
+          LUMINA<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">SPACE</span>
         </h2>
         <p className="text-gray-400 text-sm text-center mb-8">Faça login para acessar o catálogo</p>
 

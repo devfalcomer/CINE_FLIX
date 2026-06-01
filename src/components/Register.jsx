@@ -40,7 +40,7 @@ export default function Register({ onNavigateToLogin }) {
       
       <div className="w-full max-w-md bg-[#0d091f]/60 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl relative z-10 animate-fadeIn">
         <h2 className="text-3xl font-black text-white text-center mb-1">Criar Conta</h2>
-        <p className="text-gray-400 text-xs text-center mb-6">Seja bem-vindo ao MovieFlix</p>
+        <p className="text-gray-400 text-xs text-center mb-6">Seja bem-vindo ao LUMINA SPACE</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Nome */}

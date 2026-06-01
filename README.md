@@ -1,6 +1,6 @@
-# CINE FLIX - Premium Streaming Interface
+# Lumina Space - Premium Streaming Interface
 
-O **CINE FLIX** é uma plataforma moderna e responsiva de exibição de filmes e séries em tempo real. O projeto traz uma interface futurista inspirada em serviços de streaming premium, combinando efeitos de *glassmorphism* aeroespacial, animações ambientais e bordas interativas em neon que se adaptam dinamicamente às ações do usuário.
+O **LUMINA SPACE** é uma plataforma moderna e responsiva de exibição de filmes e séries em tempo real. O projeto traz uma interface futurista inspirada em serviços de streaming premium, combinando efeitos de *glassmorphism* aeroespacial, animações ambientais e bordas interativas em neon que se adaptam dinamicamente às ações do usuário.
 
 ---
 
